@@ -1,0 +1,91 @@
+body {
+    font-family: arial,verdana,helvetica,sans-serif;
+    font-size: 12px;
+}
+.maincontainer {
+     	float: left;
+     	width: 100%;
+     }
+     .headermenu {
+     	width: 100%;
+     	float: left;
+     	margin-bottom: 10px;
+     }
+     .menuitem {
+     	width: 15%;
+     	float: left;
+     	padding: 10px;
+     	text-align: center;
+     }
+     .menuitem a:hover {
+     	background-color: #fff;
+     	color: #000;
+     }
+     .menuitem a:visited {
+     	background-color: #38B137;
+     }
+     .active {
+     	background-color: #38B137;
+     	color: #ffffff;
+     }
+     .tabheader {
+     	float: left;
+     	width: 100%;
+     	margin-bottom: 10px;
+     }
+     .tabheader label{
+        border: 1px solid #E2E2E2;
+     	width: 96.4%;
+     	float: left;
+     	padding: 5px;
+     	background-color: #F3F1F1;
+     	font-size: 14px;
+     	font-weight: 600; 
+        padding-left: 25px; 
+     }
+.hidegrid {
+        background-image: url("../images/pluse.jpg");
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        background-position: 5px;
+}
+.showedgrid {
+        background-image: url("../images/mines.jpg");
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        background-position: 5px; 
+}
+     .table {
+     	float: left;
+     	width: 98.7%;
+     	border: 1px solid #E2E2E2;
+     	margin-bottom: 10px;
+     }
+     .activetb {
+
+     }
+     .tr div{
+     	float: left;
+     	width: 9%;
+     	padding: 6px;
+     }
+#title div {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9 {
+    border-right: 1px solid #E2E2E2;
+    margin: auto;
+    text-align: center;
+}
+.col10{
+    text-align: center;
+}
+.symbol {
+    background-image: url("../images/arrow.jpg");
+    background-repeat:no-repeat;
+    background-size: 15px 12px;
+    background-position: 95px;
+    text-align: left;
+}

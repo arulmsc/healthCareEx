@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stock Exchange</title>
+<script data-main='js/config.js' src='lib/requireJs.js'></script>
+<link rel='stylesheet' href='css/style.css' />
+</head>
+<body>	
+<div class="maincontainer">
+      <div class="headermenu">
+        <div class="menuitem active"><a>Show additional watch list</a></div>
+        <div class="menuitem"><a href="#">Create a new watch list</a></div>
+      </div>
+      <div class="tabheader"><label class="hidegrid">TechWatch</label></div>
+      <div class="tabheader">
+      	<label class="showedgrid">HealthcareMarket</label>
+        <div class="table">
+        	<div class="tr" id="title">
+               <div class="col1">Symbol</div>
+               <div class="col2">Bid</div>
+               <div class="col3">Ask</div>
+               <div class="col4">Last</div>
+               <div class="col5">Chg ($)</div>
+               <div class="col6">Chg (%)</div>
+               <div class="col7">Open</div>
+               <div class="col8">High</div>
+               <div class="col9">Low</div>
+               <div class="col10">Vol</div>
+        	</div>
+        	<div id="gridContent"></div>
+        	<script id="questionTemplate" type="text/template">
+              {{#each data}}
+	        	<div class="tr {{rowClass}}" id="dvalue">
+	               <div class="col1 symbol">{{symbol}}</div>
+	               <div class="col2">{{bid}}</div>
+	               <div class="col3">{{ask}}</div>
+	               <div class="col4">{{last}}</div>
+	               <div class="col5">{{chgd}}</div>
+	               <div class="col6">{{chgp}}</div>
+	               <div class="col7">{{open}}</div>
+	               <div class="col8">{{high}}</div>
+	               <div class="col9">{{low}}</div>
+	               <div class="col10">{{vol}}</div>
+	        	</div>
+              {{/each}}
+        	</script>
+        </div>
+      </div>
+      <div class="tabheader"><label class="hidegrid">ServiceMarket</label></div>
+      <div class="tabheader"><label class="hidegrid">FootMarket</label></div>
+      <div class="tabheader"><label class="hidegrid">Aerospace and De4fense</label></div>
+      <div class="tabheader"><label class="hidegrid">10UndeWatch</label></div>
+    </div>	
+</body>
+</html>
